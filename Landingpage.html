@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Disaster Management App</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        line-height: 1.6;
+      }
+
+      header {
+        padding: 60px 20px;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: 2.8rem;
+        margin-bottom: 15px;
+      }
+
+      header p {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        max-width: 700px;
+        margin: auto;
+      }
+
+      .container {
+        max-width: 1100px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        margin-top: 40px;
+      }
+
+      .card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 12px;
+        backdrop-filter: blur(10px);
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        margin-bottom: 10px;
+      }
+
+      .download-section {
+        text-align: center;
+        margin-top: 60px;
+      }
+
+      .download-btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background: #ff4b2b;
+        color: white;
+        text-decoration: none;
+        font-size: 1.1rem;
+        border-radius: 50px;
+        transition: 0.3s ease;
+      }
+
+      .download-btn:hover {
+        background: #ff416c;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 60px;
+        opacity: 0.7;
+      }
+
+      @media (max-width: 600px) {
+        header h1 {
+          font-size: 2rem;
+        }
+
+        header p {
+          font-size: 1rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Disaster Management App</h1>
+      <p>
+        An Android-based disaster response application built with Kotlin,
+        Firebase, Google Maps API, and Gemini AI. Designed to provide real-time
+        risk alerts, offline prediction, and emergency coordination.
+      </p>
+    </header>
+
+    <div class="container">
+      <section class="features">
+        <div class="card">
+          <h3>⚠ Threshold-Based Prediction</h3>
+          <p>
+            Offline disaster alerts triggered when environmental parameters
+            exceed defined risk limits.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🗺 Emergency Mapping</h3>
+          <p>
+            Highlights nearby hospitals, police stations, and fire services
+            using Google Maps API.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🤖 AI Assistant</h3>
+          <p>
+            Integrated Gemini AI to answer disaster-related queries and provide
+            guidance.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>🚨 One-Click SOS</h3>
+          <p>
+            Instantly share live GPS location with emergency contacts during
+            crises.
+          </p>
+        </div>
+      </section>
+
+      <section class="download-section">
+        <h2>Download the App</h2>
+        <p style="margin: 15px 0">Click below to download the APK file.</p>
+
+        <a
+          href="https://github.com/Priyanshu-Jangalekar/Disaster-Management-APP/releases/tag/v1.0#:~:text=1-,app%2Drelease.apk,-sha256%3A498bb1c19979f2c4756181d4c7c8d0da010e75ac8604168389103e0a4a2dd467"
+          class="download-btn"
+          download
+        >
+          Download Now
+        </a>
+
+        <div style="margin-top: 25px">
+          <p>View Source Code on GitHub</p>
+          <a
+            href="https://github.com/Priyanshu-Jangalekar/Disaster-Management-APP"
+            target="_blank"
+            style="
+              color: #ffffff;
+              text-decoration: underline;
+              font-weight: bold;
+            "
+          >
+            GitHub Repository
+          </a>
+        </div>
+      </section>
+    </div>
+
+    <footer>© 2026 Priyanshu Jangalekar | Built for safer communities</footer>
+  </body>
+</html>
